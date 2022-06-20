@@ -1,0 +1,135 @@
+:root
+{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color: rgb(98, 182, 143);
+}
+img
+{
+    width:auto;
+    height:2.3rem;
+}
+h1
+{
+    margin-left:auto;
+    display:grid;
+    justify-content: center;
+
+}
+.card-container
+{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.card
+{
+    position: relative;
+    display:grid;
+    width:15rem;
+    background-color: rgb(204, 200, 200);
+    gap:0.2rem;
+    padding:1rem;
+    border-radius: 1rem;
+}
+.card>.removeButton.button
+{
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:0.2rem;
+    top: 0.2rem;
+    background-color: gray;
+    width:fit-content;
+    border-radius: 1rem;
+}
+.card>.removeButton:hover
+{
+    background-color: rgb(145, 81, 81);
+}
+.isRead.button
+{
+    background-color: rgb(211, 59, 59);
+}
+.isRead.button:hover
+{
+    background-color: rgb(233, 90, 90);
+}
+.isRead.button.Read
+{
+    background-color: rgb(123, 189, 26);
+}
+.isRead.button.Read:hover
+{
+    background-color: rgb(177, 247, 72);
+}
+.title
+{
+    justify-self: center;
+
+    font-size:1.6rem;
+    font-weight: bold;
+}
+.button
+{
+    background-color:rgb(201, 204, 0);
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    transition: 0.5s;
+}
+.button:hover
+{
+    background-color:rgb(229, 233, 2);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#form-container
+{
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    height:fit-content;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    width:fit-content;
+    gap:0.5rem;
+    font-size: 1.6rem;
+}
+#form-container>button
+{
+    font-size: 1.3rem;
+}
+.input-holder
+{
+    display:flex;
+    justify-content: space-between;
+
+    gap:1rem;
+}
+.overlay
+{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.6);
+}
